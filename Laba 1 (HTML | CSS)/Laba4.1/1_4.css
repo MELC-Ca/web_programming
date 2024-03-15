@@ -1,0 +1,40 @@
+body
+{
+background-color: white;
+}
+
+p#zero{
+	font-family: "Arial";
+	font-weight: bold;
+}
+
+p#first{
+	border-top: 1px solid lightgrey;
+	
+	font-family: "Arial";
+}
+
+p#second{
+	border-top: 1px solid #000;
+	font-family: "Arial";
+}
+
+p#third{
+	border-top: 1px solid #000;
+	font-family: "Arial";
+}
+
+p#fourth{
+	border-top: 1px solid #000;
+	font-family: "Arial";
+}
+
+p#fifth{
+	border-top: 1px solid #000;
+	font-family: "Arial";
+}
+
+p#sixth{
+	border-top: 1px solid lightgrey;
+	font-family: "Arial";
+}

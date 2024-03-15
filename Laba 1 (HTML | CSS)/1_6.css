@@ -1,0 +1,20 @@
+body
+{
+background-color: black;
+}
+
+.change-color-link{
+  color: cyan; /* Цвет ссылки */
+ 
+}
+.change-color-link:hover{
+	color: red; /* Меняем цвет ссылки */
+}
+
+.change-color-link:active{
+	color: limegreen; /* Меняем цвет ссылки */
+}
+
+.change-color-link:visited{
+	color: orange; /* Меняем цвет ссылки */
+}

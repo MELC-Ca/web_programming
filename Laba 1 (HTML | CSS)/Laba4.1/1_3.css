@@ -1,0 +1,58 @@
+body
+{
+background-color: white;
+font-size: 15px;
+}
+
+div#first
+{
+	text-transform uppercase;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 0px #444;
+	text-shadow: 1px 1px 0px #white;
+	text-align: center;
+	color: #444;
+}
+
+div#second
+{
+	text-align: center;
+	text-decoration: underline;
+	white-space: nowrap;
+	color: #444;
+}
+
+div#third
+{
+	text-indent: 45px;
+	text-align: justify;
+	margin-top: 15px;
+	color: #444;
+}
+
+div#fourth
+{
+	text-indent: 45px;
+	text-align: justify;
+	margin-top: 15px;
+	color: #444;
+}
+
+div#fifth
+{
+	text-indent: 45px;
+	text-align: justify;
+	margin-top: 15px;
+	color: #444;
+}
+
+span#s
+{
+	font-size: 20px;
+}
+.div1::first-letter{
+	front-size: 20px;
+}
+.div1::first-letter{
+	text-indent: 45px;
+}

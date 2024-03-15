@@ -1,0 +1,86 @@
+body{
+background-color: #444;
+height: 100%;
+}
+
+ul{
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background:#808080; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+}
+a{
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#808080; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #000000; /*добавляем бордюр справа*/
+}
+
+
+a:hover{
+   background: #C0C0C0;/*добавляем эффект при наведении*/
+}
+li{
+   float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+
+  {
+  }
+
+  .block {
+          background: white;
+          width: 200px;
+          margin: 10px 10px 10px 0;
+          padding: 10px 0;
+          display: inline-block;
+          white-space: nowrap;
+          letter-spacing: 1px;
+  }
+  a {
+      color: black;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  .block:hover > a { 
+      color: red;
+  }
+  .block:hover > img {
+      opacity: 0.7;
+  }
+  img {
+      display: block;
+      width: 90%;
+      padding: 10px 10px;
+      height: auto;
+  }
+  p{
+     padding: 5px;
+  }
+  .hidden {
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  .hidden:hover {
+      text-indent: 15px;
+      overflow: visible;
+      text-overflow: inherit;
+      background: silver;
+      position: absolute;
+      top:auto; left:auto;
+      max-width: 21rem;
+      border: 1px solid #eaebec;
+      padding: 0 .5rem;
+      white-space: normal;
+      word-wrap: break-word;
+      display:block;
+      color:black;
+      margin-top:-1.25rem;
+}

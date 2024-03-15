@@ -1,0 +1,53 @@
+
+body{
+background-color: black;
+}
+
+h1{
+font-size: 16px;
+font-family: Arial, 'Times New Roman';
+text-align: center;
+color: lightgreen;
+}
+
+p#first{
+font-size: 8px;
+font-family: Arial;
+text-align: center;
+color: Red;
+}
+
+.a{
+font-size: 8px; 
+font-family: Arial; 
+text-align: center;
+color:orange;
+}
+
+p#second{
+font-size: 8px;
+font-family: Arial;
+text-align: center;
+color: yellow;
+}
+
+.b{
+font-size: 8px; 
+font-family: Arial; 
+text-align: center;
+color:green;
+}
+
+p#third{
+font-size: 8px;
+font-family: Arial;
+text-align: center;
+color: blue;
+}
+
+.c{
+font-size: 8px; 
+font-family: Arial; 
+text-align: center;
+color:purple;
+}
