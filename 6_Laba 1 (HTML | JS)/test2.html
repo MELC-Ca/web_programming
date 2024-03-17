@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Date Input Field</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {background-color:#f5f5f5;}
+    </style>
+</head>
+<body>
+    <h1>Form with Date Input Field</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+		
+				<label for="birthdate">Birthdate:</label>
+				<input type="date" id="birthdate" name="birthdate"><br><br>
+		
+				<label for="favcolor">Favorite color:</label>
+				<input type="color" id="favcolor" name="favcolor"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label><br><br>
+
+				<input type="button" value="Submit" onclick="insertRow()">
+		</form>
+		
+		<h2>Submitted Entries:</h2>
+		<table id="dataTable">
+				<thead>
+						<tr>
+								<th>Name</th>
+								<th>Email</th>
+								<th>Birthdate</th>
+								<th>Gender</th>
+								<th>Favorite color</th>
+						</tr>
+				</thead>
+				<tbody>
+				</tbody>
+		</table>
+		
+		<script>
+				function insertRow() {
+    // Get form data
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var birthdate = document.getElementById("birthdate").value;
+    var favcolor = document.getElementById("favcolor").value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
+    var fontcolor = document.getElementById("favcolor").value;
+
+    // Create a new row
+    var table = document.getElementById("dataTable");
+    var row = table.insertRow(-1);
+
+    // Insert cells into the new row
+    var nameCell = row.insertCell(0);
+    var emailCell = row.insertCell(1);
+    var birthdateCell = row.insertCell(2);
+    var genderCell = row.insertCell(3);
+    var favcolorCell = row.insertCell(4);
+
+    // Populate cells with form data
+    nameCell.innerHTML = "<span style='background-color:" + name + "; color:" + favcolor + "'>" + name + "</span>";
+    emailCell.innerHTML = "<span style='background-color:" + email + "; color:" + favcolor + "'>" + email + "</span>";
+    birthdateCell.innerHTML = "<span style='background-color:" + birthdate + "; color:" + favcolor + "'>" + birthdate + "</span>";
+    genderCell.innerHTML = "<span style='background-color:" + gender + "; color:"
+
+		document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("birthdate").value = "";
+    document.getElementById("favcolor").value = "";
+		}
+
+		</script>
+		
+</body>
+</html>

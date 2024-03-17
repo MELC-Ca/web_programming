@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Анкета</title>
+  </head>
+  <body>
+		<h1>Анкета студента</h1>
+    <form id="survey">
+			<p>What is your gender?</p>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label><br>
+			
+			<p>What is your age?</p>
+			<input type="radio" id="under18" name="age" value="under18">
+			<label for="under18">Under 18</label><br>
+			<input type="radio" id="18to30" name="age" value="18to30">
+			<label for="18to30">18 to 30</label><br>
+			<input type="radio" id="31to50" name="age" value="31to50">
+			<label for="31to50">31 to 50</label><br>
+			<input type="radio" id="over50" name="age" value="over50">
+			<label for="over50">Over 50</label><br>
+			
+			<p>What is your favorite color?</p>
+			<input type="radio" id="red" name="color" value="red">
+			<label for="red">Red</label><br>
+			<input type="radio" id="blue" name="color" value="blue">
+			<label for="blue">Blue</label><br>
+			<input type="radio" id="green" name="color" value="green">
+			<label for="green">Green</label><br>
+		</form>
+		
+		<table id="results">
+			<thead>
+				<tr>
+					<td>Question</td>
+					<td>Answer</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Gender</td>
+					<td id="genderAnswer"></td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td id="ageAnswer"></td>
+				</tr>
+				<tr>
+					<td>Favorite Color</td>
+					<td id="colorAnswer"></td>
+				</tr>
+			</tbody>
+		</table>
+		
+    <script src="test.js"></script>
+  </body>
+</html>

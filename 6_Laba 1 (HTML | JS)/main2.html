@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Анкетирование</title>
+			<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Анкета студента</h1>
+		<form id="surveyForm">
+			<p>
+				<label for="fullNameInput">ФИО в именительном падеже:</label>
+				<input type="text" id="fullNameInput" required>
+			</p>
+
+			<p>
+				<label>Год рождения:</label>
+				<input type="date" id="birthYearInput" required>
+			</p>
+
+			<p>
+				<label>Пол:</label>
+				<div>
+					<input type="radio" id="genderRadio0"
+					 name="gender" value="Мужской">
+					<label for="genderRadio0">Мужской</label>
+			
+					<input type="radio" id="genderRadio1"
+					 name="gender" value="Женский">
+					<label for="genderRadio1">Женский</label>
+			
+					<input type="radio" id="genderRadio2"
+					 name="gender" value="Genderfluid Helisexual">
+					<label for="genderRadio2">Genderfluid Helisexual</label>
+				</div>
+			</p>
+
+			<p>
+				<label for="facultySelect">Факультет:</label>
+				<select id="facultySelect">
+					<option value=""></option>
+					<option value="Факультет психологии">Факультет психологии</option>
+					<option value="Филологический факультет">Филологический факультет</option>
+					<option value="Факультет математики и информационных технологий">Факультет математики и информационных технологий</option>
+					<option value="Факультет наук о Земле и туризма">Факультет наук о Земле и туризма</option>
+					<option value="Факультет башкирской филологии, востоковедения и журналистики">Факультет башкирской филологии, востоковедения и журналистики</option>
+					<option value="Физико-технический институт">Физико-технический институт</option>
+					<option value="Факультет философии и социологии">Факультет философии и социологии</option>
+					<option value="Факультет романо-германской филологии">Факультет романо-германской филологии</option>
+					<option value="Химический факультет">Химический факультет</option>
+					<option value="Институт экономики, финансов и бизнеса">Институт экономики, финансов и бизнеса</option>
+					<option value="Институт истории и государственного управления">Институт истории и государственного управления</option>
+					<option value="Инженерный факультет">Инженерный факультет</option>
+					<option value="Биологический факультет">Биологический факультет</option>
+					<option value="Институт права">Институт права</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="specialtyInput">Специальность:</label>
+				<input type="text" id="specialtyInput" required>
+			</p>
+
+			<p>
+				<label for="courseInput">Курс:</label>
+				<input type="number" id="courseInput" min="1" max="6" step="1" required>
+			</p>
+
+			<p>
+				<label for="hobbyInput">Хобби:</label>
+				<input type="text" id="hobbyInput" required>
+			</p>
+
+			<p>
+				<label for="languageInput">Иностранный язык:</label>
+				<input type="text" id="languageInput" required>
+			</p>
+
+			<p>
+				<label for="instrumentInput">Музыкальный инструмент:</label>
+				<input type="text" id="instrumentInput" required>
+			</p>
+			
+			<p>
+				<label for="favoriteSportInput">Любимый вид спорта:</label>
+				<input type="text" id="favoriteSportInput" required>
+			</p>
+			
+			<p>
+				<label for="favoriteColorInput">Любимый цвет:</label>
+				<input type="color" id="favoriteColorInput" required>
+			</p>
+			
+			<br>
+
+			<button type="button" onClick="submitForm(); resetRadio(); getData();"">Сформировать таблицу</button>
+			
+
+		</form>
+
+		<br><br><br>
+
+		<table id="myTable">
+    	<tr>
+				<th>ФИО</th>
+				<th>Год рождения</th>
+				<th>Пол</th>
+				<th>Факультет</th>
+				<th>Специальность</th>
+				<th>Курс</th>
+				<th>Хобби</th>
+				<th>Иностранный язык</th>
+				<th>Музыкальный инструмент</th>
+				<th>Любимый вид спорта</th>
+				<th>Любимый цвет</th>
+			</tr>
+    </table>
+
+		<script src="script2.js"></script>
+	</body>
+</html>
